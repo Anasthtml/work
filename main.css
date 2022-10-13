@@ -1,0 +1,249 @@
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15 px;
+    padding: 0;
+	margin: 0;
+    color: #201b2d;
+}
+div, p, input, button, form, span, a {
+	box-sizing: border-box;
+}
+h1, h2, h3 {
+	margin: 0;
+	font-family: 'Monserrat', sans-serif;
+	font-weight: 900;
+}
+p {
+	line-height: 1.65em;
+}
+.container {
+    width: 1176px;
+	margin: 0 auto;
+}
+.header
+{
+    padding-top: 75px;
+	padding-bottom: 140px;
+    color: #fff;
+    background: rgba(90,182,236,1);
+    background: -moz-linear-gradient(left, rgba(90,182,236,1) 0%, rgba(73,138,200,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(90,182,236,1)), color-stop(100%, rgba(73,138,200,1)));
+    background: -webkit-linear-gradient(left, rgba(90,182,236,1) 0%, rgba(73,138,200,1) 100%);
+    background: -o-linear-gradient(left, rgba(90,182,236,1) 0%, rgba(73,138,200,1) 100%);
+    background: -ms-linear-gradient(left, rgba(90,182,236,1) 0%, rgba(73,138,200,1) 100%);
+    background: linear-gradient(to right, rgba(90,182,236,1) 0%, rgba(73,138,200,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ab6ec', endColorstr='#498ac8', GradientType=1 );
+}
+.logo {
+    padding-left: 326px;
+}
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.title {
+	font-size: 30px;
+    width: 562px;
+}
+h1, p {
+    color: #ffffff;
+}
+span
+{
+    font-size: 45px;
+}
+
+.intro
+{
+    margin-top: 45px;
+    width: 450px;
+    margin-bottom: 42px;
+}
+.btn {
+	font-family: 'Montserrat', sans-serif;
+	background: #ffd429;
+	color: rgb(7, 2, 2);
+	display: block;
+	width: 227px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+.btn:hover {
+	background: #d9860e;
+}
+
+.learn {
+	padding-top: 106px;
+	padding-bottom: 121px;
+        text-align: center;
+}
+
+.section-title {
+	font-size: 30px;
+    text-align: center;
+}
+.skills {
+	display: flex;
+	justify-content: space-between;
+}
+.skill {
+	width: 289px;
+	text-align: center;
+    font-size: 15px;
+}
+.desktop {
+    margin-top: 79px;
+    height: 59px;
+}
+.skill-title {
+    font-size: 18px;
+    margin-top: 32px;   
+}
+.skill-text {
+    margin-top:22px;
+    color:rgb(7, 2, 2);   
+}
+.skill-free {
+	width: 289px;
+    text-align: center;
+    font-size: 15px;
+}
+.skill-change {
+    width: 289px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mail {
+	background: #ecf3f8;
+	padding-top: 100px;
+	padding-bottom: 100px;
+    align-items: center;
+}
+.form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 62px;
+}
+.input {
+	width: 340px;
+	border: 1px solid #bfb8d1;
+	font-size: 15px;
+	font-family: 'Open Sans', sans-serif;
+	height: 46px;
+	padding-left: 23px;
+    align-items: center;
+    margin-top: 13px;
+    margin: 0 auto 15px;
+}
+.btn-form {
+	border: 0;
+	cursor: pointer;
+	display: inline;
+    width: 340px;
+    margin-top: 13px;
+    margin: 0 auto 15px;
+}
+.footer
+{
+padding: 64px 0;
+background-color: #164d7a;
+}
+.credits {
+color: #d4cee3;
+font-size: 14px;
+margin: 0;
+text-align: center;
+}
+
+/*Responsive*/
+
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+	.container {
+		width: 960px;
+	}
+        .title {
+                width: auto;
+        }
+        .intro {
+                width: auto;
+        }
+}
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.offer {
+		width: 100%;
+	}
+	.intro {
+		width: auto;
+	}
+	.desktop {
+		display: block;
+	    width: 549px;
+	    margin: 72px auto 0;
+	}
+	.skills {
+		flex-direction: column;
+    }
+	.skill {
+		width: auto;
+		margin-bottom: 30px;
+	}
+    .desktop {
+        margin-top: 79px;
+        width: 59px;
+    }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 540px;
+	}
+	.desktop {
+		width: 100%;
+	}
+	.input {
+		width: 100%;
+	}
+	.btn {
+		margin-left: 0;
+	    margin-top: 15px;
+	    width: 100%;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 90%;
+	}
+    .logo {
+        padding-left: 0px;
+    }
+    .title{
+        width: 90%;
+    }
+    .desk {
+        width: 100%;
+    }
+    .desktop {
+        margin-top: 79px;
+        width: 59px;
+    }
+}
